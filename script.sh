@@ -1,20 +1,18 @@
 #update and upgrade
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade - y
 
 #insatall and configure fish shell
-sudo apt install fish
-fish
+sudo apt install fish -y
 set fish_greeting
-sudo apt install curl
-sudo apt install fonts-powerline
-curl -L https://get.oh-my.fish | fish
-#install a custom theme | https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
-omf install boxfish 
+sudo apt install curl -y
+sudo apt install fonts-powerline -y
+curl -L https://get.oh-my.fish
+
 #set fish shell
 chsh -s /usr/bin/fish
 
 #install kde
-sudo apt insatall kde-plasma-desktop
+sudo apt install kde-plasma-desktop -y
 
 #reboot the sistem
 sudo reboot
