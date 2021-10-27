@@ -22,11 +22,10 @@ neofetch
 
 #uninstall firefox and install brave
 sudo apt purge firefox -y
-rm -r .mozilla/
 cd /etc
 rm -r firefox/
 cd /usr/lib
-rm -r mozilla/
+sudo rm -r mozilla/
 sudo snap install brave
 
 #uninstall dolphin
