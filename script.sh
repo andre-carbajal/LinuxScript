@@ -7,8 +7,11 @@ sudo apt install kde-plasma-desktop -y
 #install aptitude
 sudo apt install aptitude -y
 
-#isntall NodeJa
+#isntall NodeJs
 sudo aptitude install nodejs -y
+
+#install java16
+sudo aptitude install openjdk-16-jdk -y
 
 #install VsCode
 sudo snap install code --classic
@@ -37,13 +40,11 @@ sudo aptitude install filezilla -y
 
 #insatall and configure fish shell
 sudo apt install fish -y
-sudo apt install curl -y
-sudo apt install fonts-powerline -y
-
-#set fish shell
-chsh -s /usr/bin/fish
-
 #remove the greeting 
 set fish_greeting
+#set fish shell
+chsh -s /usr/bin/fish
+sudo apt install curl -y
+sudo apt install fonts-powerline -y
 
 curl -L https://get.oh-my.fish | fish
