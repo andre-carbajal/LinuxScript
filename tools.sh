@@ -16,13 +16,12 @@ neofetch
 
 #uninstall firefox and install brave
 sudo apt purge firefox -y
-ls -a
 sudo rm -r .mozilla/
 cd /etc
 sudo rm -r firefox/
 cd /usr/lib
 sudo rm -r mozilla/
-sudo snap install brave -y
+sudo snap install brave
 
 #uninstall dolphin
 sudoa apt purge dolphin
@@ -31,7 +30,7 @@ sudoa apt purge dolphin
 sudoa apt purge konqueror
 
 #install filezilla
-sudo aptitude install filezilla
+sudo aptitude install filezilla -y
 
 #install a custom theme | https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
 omf install boxfish 
