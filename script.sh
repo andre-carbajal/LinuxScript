@@ -43,4 +43,7 @@ sudo apt install fonts-powerline -y
 #set fish shell
 chsh -s /usr/bin/fish
 
+#remove the greeting 
+set fish_greeting
+
 curl -L https://get.oh-my.fish | fish
