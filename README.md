@@ -34,6 +34,7 @@ reboot
  - Programs: 
 	 - Java 16
 	 - NodeJs
+	 - Npm
 	 - Visual Studio Code
 	 - Brave
 	 - Filezilla

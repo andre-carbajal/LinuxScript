@@ -7,8 +7,11 @@ sudo apt install kde-plasma-desktop -y
 #install aptitude
 sudo apt install aptitude -y
 
-#isntall NodeJs
+#install NodeJs
 sudo aptitude install nodejs -y
+
+#install npm
+sudo apt install npm -y
 
 #install java16
 sudo aptitude install openjdk-16-jdk -y
