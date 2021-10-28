@@ -22,6 +22,10 @@ sudo sh script.sh
 ```
 omf install boxfish
 ```
+6. Restar Pop Os
+```
+reboot
+```
 
 ### This script install:
 
