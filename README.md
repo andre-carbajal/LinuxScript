@@ -5,15 +5,23 @@
   ### How to use it?
 
  1. Clone the repository
- `git clone https://github.com/anviaan/pop-os-script.git`
+ ```
+ git clone https://github.com/anviaan/pop-os-script.git
+ ```
  
  2. Enter into the archive
-`cd pop-os-script`
+```
+cd pop-os-script
+```
  3. Run the file
-`sudo sh script.sh`
+```
+sudo sh script.sh
+```
  4. Wait and if it is required to use "y" to confirm any installation
  5. Install a custom theme [HERE](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md) | for example
-`omf install boxfish`
+```
+omf install boxfish
+```
 
 ### This script install:
 
