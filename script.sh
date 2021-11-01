@@ -21,7 +21,6 @@ sudo snap install code --classic
 
 #install neofetch
 sudo apt install neofetch -y
-neofetch
 
 #uninstall firefox and install brave
 sudo apt purge firefox -y
@@ -42,8 +41,8 @@ sudo aptitude install filezilla -y
 
 #insatall and configure fish shell
 sudo apt install fish -y
-#remove the greeting 
-set fish_greeting
+#config fish file
+mv config.fish ~/.config/fish/
 #set fish shell
 chsh -s /usr/bin/fish
 sudo apt install curl -y
