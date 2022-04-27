@@ -11,7 +11,7 @@ sudo aptitude install nodejs -y
 sudo apt install npm -y
 
 #install java17
-sudo aptitude install openjdk-17-jdk -y
+sudo apt install openjdk-17-jdk -y
 
 #install snap 
 sudo apt install snap
@@ -21,6 +21,9 @@ sudo snap install code --classic
 
 #install intellij ide
 sudo snap install intellij-idea-community --classic
+
+#install heroku
+sudo snap isntall heroku --classic
 
 #install neofetch
 sudo apt install neofetch -y
