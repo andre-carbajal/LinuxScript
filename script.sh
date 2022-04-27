@@ -22,9 +22,6 @@ sudo snap install code --classic
 #install intellij ide
 sudo snap install intellij-idea-community --classic
 
-#install heroku
-sudo snap isntall heroku --classic
-
 #install neofetch
 sudo apt install neofetch -y
 
