@@ -1,11 +1,9 @@
 #update and upgrade
 sudo apt update && sudo apt upgrade - y
 
-#install aptitude
-sudo apt install aptitude -y
-
-#install NodeJs
-sudo aptitude install nodejs -y
+#install NodeJs-17.X 
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash - 
+sudo apt-get install -y nodejs
 
 #install npm
 sudo apt install npm -y
