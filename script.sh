@@ -1,6 +1,9 @@
 #update and upgrade
 sudo apt update && sudo apt upgrade - y
 
+#install curl
+sudo apt install curl -y
+
 #install NodeJs-17.X 
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash - 
 sudo apt-get install -y nodejs
@@ -34,6 +37,5 @@ mv ./config.fish ~/.config/fish/
 
 #set fish shell
 chsh -s /usr/bin/fish
-sudo apt install curl -y
 sudo apt install fonts-powerline -y
 curl -L https://get.oh-my.fish | fish
