@@ -4,7 +4,7 @@ sudo apt update && sudo apt upgrade - y
 #install curl
 sudo apt install curl -y
 
-#install NodeJs-17.X 
+#install NodeJs-18.X 
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
