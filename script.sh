@@ -1,15 +1,10 @@
+#!/bin/bash
+
 #update and upgrade
 sudo apt update && sudo apt upgrade - y
 
 #install curl
 sudo apt install curl -y
-
-#install NodeJs-18.X 
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
-#install npm
-sudo apt install npm -y
 
 #install java17
 sudo apt install openjdk-17-jdk -y
@@ -17,11 +12,20 @@ sudo apt install openjdk-17-jdk -y
 #install snap 
 sudo apt install snap
 
+#install telegram
+sudo snap install telegram-desktop
+
+#install postman
+sudo snap install postman
+
+#install discord
+sudo snap install discord
+
 #install VsCode
 sudo snap install code --classic
 
 #install intellij ide
-sudo snap install intellij-idea-community --classic
+sudo snap install intellij-idea-ultimate --classic
 
 #install neofetch
 sudo apt install neofetch -y
@@ -33,7 +37,13 @@ sudo aptitude install filezilla -y
 sudo apt install fish -y
 
 #config fish file
-mv ./config.fish ~/.config/fish/
+if [ -d ~/.config ];
+then
+    sudo mv ./config.fish ~/.config/fish/
+else
+    sudo mkdir ~/.config
+    sudo mv ./config.fish ~/.config/fish/
+fi
 
 #set fish shell
 chsh -s /usr/bin/fish
