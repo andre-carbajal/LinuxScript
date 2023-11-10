@@ -6,11 +6,15 @@ sudo apt update && sudo apt upgrade - y
 #install curl
 sudo apt install curl -y
 
-#install java17
-sudo apt install openjdk-17-jdk -y
+#install Adoptium JDK 17
+wget https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jdk_x64_linux_hotspot_17.0.9_9.tar.gz
+tar -xvf OpenJDK17U-jdk_x64_linux_hotspot_17.0.9_9.tar.gz
+sudo mv jdk-17.0.9+9/ /opt/
+cd /opt/
+sudo update-alternatives --install /usr/bin/java java /opt/jdk-17.0.9+9/bin/java 1
 
 #install snap 
-sudo apt install snap
+sudo apt install snap -y
 
 #install telegram
 sudo snap install telegram-desktop
