@@ -21,6 +21,12 @@ sudo snap install discord
 #install VsCode
 sudo snap install code --classic
 
+#install node
+sudo snap install node --classic
+
+#install termius
+sudo snap install termius-app
+
 #install notion
 sudo snap install notion-snap-reborn
 

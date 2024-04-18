@@ -24,10 +24,13 @@ reboot
 
 ### This script install:
 
- - Programs: 
-	 - telegram-desktop
-	 - Discord
-	 - Visual Studio Code
-	 - Notion
-	 - Filezilla
-	 - Sdkman
+- Programs: 
+	- Telegram
+	- Discord
+	- Visual Studio Code
+	- Notion
+	- Filezilla
+	- Termius
+- Command programs:
+	- Sdkman
+	- Node
