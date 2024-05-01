@@ -6,11 +6,14 @@ sudo apt update && sudo apt upgrade -y
 #install git
 sudo apt install git -y
 
+#install zip
+sudo apt install zip -y
+
 #install curl
 sudo apt install curl -y
 
-#install snap 
-sudo apt install snap -y
+#install snap
+sudo apt install snapd -y
 
 #install telegram
 sudo snap install telegram-desktop
@@ -34,7 +37,7 @@ sudo snap install notion-snap-reborn
 sudo apt install neofetch -y
 
 #install filezilla
-sudo aptitude install filezilla -y
+sudo apt install filezilla -y
 
 #install neovim
 sudo apt install neovim -y
