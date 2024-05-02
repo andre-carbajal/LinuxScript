@@ -33,4 +33,4 @@ reboot
 	- Termius
 - Command programs:
 	- Sdkman
-	- Node
+	- Node Js
