@@ -12,6 +12,15 @@ sudo apt install zip -y
 #install curl
 sudo apt install curl -y
 
+#install neofetch
+sudo apt install neofetch -y
+
+#install filezilla
+sudo apt install filezilla -y
+
+#install neovim
+sudo apt install neovim -y
+
 #install snap
 sudo apt install snapd -y
 
@@ -32,15 +41,6 @@ sudo snap install termius-app
 
 #install notion
 sudo snap install notion-snap-reborn
-
-#install neofetch
-sudo apt install neofetch -y
-
-#install filezilla
-sudo apt install filezilla -y
-
-#install neovim
-sudo apt install neovim -y
 
 #install sdkman
 curl -s "https://get.sdkman.io" | bash
