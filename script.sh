@@ -1,53 +1,41 @@
 #!/bin/bash
 
-#update and upgrade
+# Function to install apt packages
+install_apt_packages() {
+    sudo apt install -y "$@"
+}
+
+# Function to install snap packages
+install_snap_packages() {
+    for pkg in "$@"; do
+        if ! snap list | grep -q "$pkg"; then
+            sudo snap install "$pkg"
+        fi
+    done
+}
+
+# Function to install snap packages with classic confinement
+install_snap_classic_packages() {
+    for pkg in "$@"; do
+        if ! snap list | grep -q "$pkg"; then
+            sudo snap install "$pkg" --classic
+        fi
+    done
+}
+
+# Update and upgrade
 sudo apt update && sudo apt upgrade -y
 
-#install git
-sudo apt install git -y
+# Install apt packages
+install_apt_packages git zip curl neofetch filezilla neovim snapd python3 python3-pip
 
-#install zip
-sudo apt install zip -y
+# Install snap packages
+install_snap_packages telegram-desktop discord termius-app notion-snap-reborn
 
-#install curl
-sudo apt install curl -y
+# Install snap packages with classic confinement
+install_snap_classic_packages code node
 
-#install neofetch
-sudo apt install neofetch -y
-
-#install filezilla
-sudo apt install filezilla -y
-
-#install neovim
-sudo apt install neovim -y
-
-#install snap
-sudo apt install snapd -y
-
-#install telegram
-sudo snap install telegram-desktop
-
-#install discord
-sudo snap install discord
-
-#install VsCode
-sudo snap install code --classic
-
-#install node
-sudo snap install node --classic
-
-#install termius
-sudo snap install termius-app
-
-#install notion
-sudo snap install notion-snap-reborn
-
-#install python3
-sudo apt install python3 -y 
-
-# install pip
-sudo apt install python3-pip -y
-
+# Configure pip
 if [ ! -d ~/.config/pip/ ]; then
     mkdir -p ~/.config/pip/
 fi
@@ -55,6 +43,7 @@ fi
 echo "[global]
 break-system-packages = true" > ~/.config/pip/pip.conf
 
-
-#install sdkman
-curl -s "https://get.sdkman.io" | bash
+# Install sdkman
+if ! command -v sdk &> /dev/null; then
+    curl -s "https://get.sdkman.io" | bash
+fi
