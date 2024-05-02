@@ -42,5 +42,19 @@ sudo snap install termius-app
 #install notion
 sudo snap install notion-snap-reborn
 
+#install python3
+sudo apt install python3 -y 
+
+# install pip
+sudo apt install python3-pip -y
+
+if [ ! -d ~/.config/pip/ ]; then
+    mkdir -p ~/.config/pip/
+fi
+
+echo "[global]
+break-system-packages = true" > ~/.config/pip/pip.conf
+
+
 #install sdkman
 curl -s "https://get.sdkman.io" | bash
