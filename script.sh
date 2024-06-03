@@ -27,7 +27,7 @@ install_snap_classic_packages() {
 sudo apt update && sudo apt upgrade -y
 
 # Install apt packages
-install_apt_packages git zip curl neofetch filezilla neovim snapd python3 python3-pip
+install_apt_packages git zip curl filezilla neovim snapd python3 python3-pip
 
 # Install snap packages
 install_snap_packages telegram-desktop discord termius-app notion-snap-reborn
